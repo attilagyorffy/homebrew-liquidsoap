@@ -134,7 +134,7 @@ class Liquidsoap < Formula
   homepage 'http://liquidsoap.fm/'
   sha256 '03990cbe21dc41b0aeeda60fcaaf5c2c48707c418724fe88abc1c57a5fa15ef5'
 
-  unless MacOS.snow_leopard? or MacOS.lion? or MacOS.mountain_lion?
+  unless MacOS.version >= :snow_leopard
     onoe 'Sorry!'
     onoe 'We currently does not support MacOSX older than 10.6, '
     onoe 'try old Macports way described here -> http://savonet.sourceforge.net/macports.html'
